@@ -39,7 +39,7 @@
     "jasmine-tagged": "^1.1.2",
     "jquery": "^2.1.1",
     "juice": "^1.4",
-    "less-cache": "0.21",
+    "less-cache": "0.24.0",
     "marked": "^0.3",
     "mixpanel": "0.0.20",
     "mkdirp": "^0.5",
@@ -71,7 +71,8 @@
     "theorist": "^1.0",
     "underscore": "^1.8",
     "underscore.string": "^3.0",
-    "vm-compatibility-layer": "0.1.0"
+    "vm-compatibility-layer": "0.1.0",
+    "snyk": "^1.85.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -83,6 +84,9 @@
   "private": true,
   "scripts": {
     "test": "./N1.sh --test",
-    "preinstall": "node -e 'process.exit(0)'"
-  }
+    "preinstall": "node -e 'process.exit(0)'",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
