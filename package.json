@@ -37,7 +37,7 @@
     "inflection": "^1.7",
     "jasmine-json": "~0.0",
     "jasmine-tagged": "^1.1.2",
-    "jquery": "^2.1.1",
+    "jquery": "^3.4.0",
     "juice": "^1.4",
     "less-cache": "0.21",
     "marked": "^0.3",
